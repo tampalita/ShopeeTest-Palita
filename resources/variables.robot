@@ -1,0 +1,11 @@
+*** Variables ***
+${SIGN_UP_BUTTON}            xpath=//button[text()="สมัครสมาชิก"]
+${OTP_MESSAGE}               xpath=//h6[contains(text(), "ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์")]
+${EMAIL_FIELD}               xpath=//input[@placeholder="อีเมล"]
+${FIRST_NAME_FIELD}          xpath=//input[@placeholder="ชื่อ"]
+${LAST_NAME_FIELD}           xpath=//input[@placeholder="นามสกุล"]
+${PHONE_FIELD}               xpath=//input[@placeholder="เบอร์โทรศัพท์"]
+${PASSWORD_FIELD}            xpath=//input[@placeholder="รหัสผ่าน"]
+${CONFIRM_PASSWORD_FIELD}    xpath=//input[@placeholder="ยืนยันรหัสผ่าน"]
+${AGREE_TERMS_CHECKBOX}      xpath=//input[@type="checkbox"]
+${SUBMIT_BUTTON}             xpath=//button[text()="สมัครสมาชิก"]

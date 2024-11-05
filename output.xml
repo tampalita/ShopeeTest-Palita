@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.9.6 on darwin)" generated="2024-11-05T13:38:50.761281" rpa="false" schemaversion="5">
+<suite id="s1" name="SignUpTest" source="/Users/tampalita/Documents/test script/testcases/SignUpTest.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-11-05T13:38:50.940514" level="INFO">Opening browser 'chrome' to base url 'https://futureskill.co/'.</msg>
+<arg>${baseUrl}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-05T13:38:50.940287" elapsed="2.091684"/>
+</kw>
+<test id="s1-t1" name="As a user, I want to register on Future Skill platform" line="13">
+<kw name="user is on the Future Skill home page" owner="HomePageKeywords">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-11-05T13:38:53.036953" level="INFO">Opening url 'https://futureskill.co/'</msg>
+<arg>${baseUrl}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-11-05T13:38:53.036729" elapsed="0.457062"/>
+</kw>
+<doc>Opens the Future Skill home page</doc>
+<status status="PASS" start="2024-11-05T13:38:53.034874" elapsed="0.459325"/>
+</kw>
+<kw name="user clicks on &quot;สมัครสมาชิก&quot; button" owner="HomePageKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SIGN_UP_BUTTON}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-05T13:38:53.495435" elapsed="0.361242"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-05T13:38:53.857251" level="INFO">Clicking element 'xpath=//button[text()="สมัครสมาชิก"]'.</msg>
+<arg>${SIGN_UP_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-05T13:38:53.856956" elapsed="1.106151"/>
+</kw>
+<status status="PASS" start="2024-11-05T13:38:53.495071" elapsed="1.468207"/>
+</kw>
+<kw name="user enters registration details" owner="SignUpPageKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-05T13:38:54.964663" level="INFO">Typing text 'palitauser@example.com' into text field 'xpath=//input[@placeholder="อีเมล"]'.</msg>
+<arg>${EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-05T13:38:54.964377" elapsed="0.430913"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-05T13:38:55.395808" level="INFO">Typing text 'Palita' into text field 'xpath=//input[@placeholder="ชื่อ"]'.</msg>
+<arg>${FIRST_NAME_FIELD}</arg>
+<arg>${first_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-05T13:38:55.395526" elapsed="0.058758"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-05T13:38:55.454816" level="INFO">Typing text 'Tester' into text field 'xpath=//input[@placeholder="นามสกุล"]'.</msg>
+<arg>${LAST_NAME_FIELD}</arg>
+<arg>${last_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-05T13:38:55.454539" elapsed="0.052845"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-05T13:38:55.508049" level="INFO">Typing text '0886168888' into text field 'xpath=//input[@placeholder="เบอร์โทรศัพท์"]'.</msg>
+<arg>${PHONE_FIELD}</arg>
+<arg>${phone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-05T13:38:55.507751" elapsed="0.060843"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-05T13:38:55.569062" level="INFO">Typing text 'Test@1111' into text field 'xpath=//input[@placeholder="รหัสผ่าน"]'.</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-05T13:38:55.568798" elapsed="0.067124"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-05T13:38:55.636399" level="INFO">Typing text 'Test@1111' into text field 'xpath=//input[@placeholder="ยืนยันรหัสผ่าน"]'.</msg>
+<arg>${CONFIRM_PASSWORD_FIELD}</arg>
+<arg>${confirm_password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-05T13:38:55.636126" elapsed="0.053255"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-05T13:38:55.689844" level="INFO">Clicking element 'xpath=//input[@type="checkbox"]'.</msg>
+<arg>${AGREE_TERMS_CHECKBOX}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-05T13:38:55.689600" elapsed="0.052813"/>
+</kw>
+<status status="PASS" start="2024-11-05T13:38:54.963966" elapsed="0.778605"/>
+</kw>
+<kw name="user submits the registration form" owner="SignUpPageKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SUBMIT_BUTTON}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-05T13:38:55.743339" elapsed="0.034045"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-05T13:38:55.777847" level="INFO">Clicking element 'xpath=//button[text()="สมัครสมาชิก"]'.</msg>
+<arg>${SUBMIT_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-05T13:38:55.777610" elapsed="0.062031"/>
+</kw>
+<status status="PASS" start="2024-11-05T13:38:55.742878" elapsed="0.096951"/>
+</kw>
+<kw name="system should display OTP page with message &quot;ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์&quot;" owner="OTPPageKeywords">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${OTP_MESSAGE}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-11-05T13:38:55.840549" elapsed="2.156279"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-11-05T13:38:58.006944" level="INFO">Current page contains element 'xpath=//h6[contains(text(), "ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์")]'.</msg>
+<arg>${OTP_MESSAGE}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-11-05T13:38:57.997191" elapsed="0.009879"/>
+</kw>
+<status status="PASS" start="2024-11-05T13:38:55.840233" elapsed="2.166980"/>
+</kw>
+<doc>Test case for signing up on Future Skill platform</doc>
+<status status="PASS" start="2024-11-05T13:38:53.033243" elapsed="4.974227"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-05T13:38:58.008184" elapsed="0.139241"/>
+</kw>
+<status status="PASS" start="2024-11-05T13:38:50.762510" elapsed="7.385061"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="SignUpTest">SignUpTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
