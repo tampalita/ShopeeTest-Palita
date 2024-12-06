@@ -1,136 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1 (Python 3.9.6 on darwin)" generated="2024-11-05T13:38:50.761281" rpa="false" schemaversion="5">
-<suite id="s1" name="SignUpTest" source="/Users/tampalita/Documents/test script/testcases/SignUpTest.robot">
+<robot generator="Robot 7.1 (Python 3.9.6 on darwin)" generated="2024-12-06T15:15:53.057662" rpa="false" schemaversion="5">
+<suite id="s1" name="TC Shopee" source="/Users/tampalita/Documents/Shopee/testcases/TC_Shopee.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-11-05T13:38:50.940514" level="INFO">Opening browser 'chrome' to base url 'https://futureskill.co/'.</msg>
-<arg>${baseUrl}</arg>
-<arg>chrome</arg>
+<msg time="2024-12-06T15:15:53.173325" level="INFO">Opening browser 'edge' to base url 'https://shopee.co.th/'.</msg>
+<arg>${URL}</arg>
+<arg>edge</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-11-05T13:38:50.940287" elapsed="2.091684"/>
+<status status="PASS" start="2024-12-06T15:15:53.173184" elapsed="5.322443"/>
 </kw>
-<test id="s1-t1" name="As a user, I want to register on Future Skill platform" line="13">
-<kw name="user is on the Future Skill home page" owner="HomePageKeywords">
-<kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-11-05T13:38:53.036953" level="INFO">Opening url 'https://futureskill.co/'</msg>
-<arg>${baseUrl}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-11-05T13:38:53.036729" elapsed="0.457062"/>
+<test id="s1-t1" name="TS001 Verify Landing on Shopee Home Page and Changing the Language to English" line="12">
+<kw name="This test ensures that the website is functional, accessible, and correctly updates the interface when the language is changed to English.">
+<msg time="2024-12-06T15:15:58.501990" level="FAIL">No keyword with name 'This test ensures that the website is functional, accessible, and correctly updates the interface when the language is changed to English.' found.</msg>
+<status status="FAIL" start="2024-12-06T15:15:58.501886" elapsed="0.000202">No keyword with name 'This test ensures that the website is functional, accessible, and correctly updates the interface when the language is changed to English.' found.</status>
 </kw>
-<doc>Opens the Future Skill home page</doc>
-<status status="PASS" start="2024-11-05T13:38:53.034874" elapsed="0.459325"/>
+<kw name="Select English Language" owner="ShopeeKeywords">
+<status status="NOT RUN" start="2024-12-06T15:15:58.502547" elapsed="0.000039"/>
 </kw>
-<kw name="user clicks on &quot;สมัครสมาชิก&quot; button" owner="HomePageKeywords">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${SIGN_UP_BUTTON}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-11-05T13:38:53.495435" elapsed="0.361242"/>
+<kw name="Verify Language Is English" owner="ShopeeKeywords">
+<status status="NOT RUN" start="2024-12-06T15:15:58.502719" elapsed="0.000023"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-11-05T13:38:53.857251" level="INFO">Clicking element 'xpath=//button[text()="สมัครสมาชิก"]'.</msg>
-<arg>${SIGN_UP_BUTTON}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-05T13:38:53.856956" elapsed="1.106151"/>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-12-06T15:15:58.502878" elapsed="0.000021"/>
 </kw>
-<status status="PASS" start="2024-11-05T13:38:53.495071" elapsed="1.468207"/>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2024-12-06T15:15:58.646691" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-12-06T15:15:58.503118" elapsed="0.143653"/>
 </kw>
-<kw name="user enters registration details" owner="SignUpPageKeywords">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-11-05T13:38:54.964663" level="INFO">Typing text 'palitauser@example.com' into text field 'xpath=//input[@placeholder="อีเมล"]'.</msg>
-<arg>${EMAIL_FIELD}</arg>
-<arg>${email}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-05T13:38:54.964377" elapsed="0.430913"/>
+<doc>Verify that the Shopee home page loads successfully and allows users to change the default language to English.</doc>
+<status status="FAIL" start="2024-12-06T15:15:58.498212" elapsed="0.148650">No keyword with name 'This test ensures that the website is functional, accessible, and correctly updates the interface when the language is changed to English.' found.</status>
+</test>
+<test id="s1-t2" name="TS002 Verify Search Functionality for the Keyword “baby toys”" line="19">
+<kw name="This test ensures that users can search for products and that relevant results are displayed for valid input keywords.">
+<msg time="2024-12-06T15:15:58.649541" level="FAIL">No keyword with name 'This test ensures that users can search for products and that relevant results are displayed for valid input keywords.' found.</msg>
+<status status="FAIL" start="2024-12-06T15:15:58.649512" elapsed="0.000059">No keyword with name 'This test ensures that users can search for products and that relevant results are displayed for valid input keywords.' found.</status>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-11-05T13:38:55.395808" level="INFO">Typing text 'Palita' into text field 'xpath=//input[@placeholder="ชื่อ"]'.</msg>
-<arg>${FIRST_NAME_FIELD}</arg>
-<arg>${first_name}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-05T13:38:55.395526" elapsed="0.058758"/>
+<kw name="Select English Language" owner="ShopeeKeywords">
+<status status="NOT RUN" start="2024-12-06T15:15:58.649700" elapsed="0.000022"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-11-05T13:38:55.454816" level="INFO">Typing text 'Tester' into text field 'xpath=//input[@placeholder="นามสกุล"]'.</msg>
-<arg>${LAST_NAME_FIELD}</arg>
-<arg>${last_name}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-05T13:38:55.454539" elapsed="0.052845"/>
+<kw name="Search For Products" owner="ShopeeKeywords">
+<arg>baby toys</arg>
+<status status="NOT RUN" start="2024-12-06T15:15:58.649810" elapsed="0.000017"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-11-05T13:38:55.508049" level="INFO">Typing text '0886168888' into text field 'xpath=//input[@placeholder="เบอร์โทรศัพท์"]'.</msg>
-<arg>${PHONE_FIELD}</arg>
-<arg>${phone}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-05T13:38:55.507751" elapsed="0.060843"/>
+<kw name="Verify Search Results Displayed" owner="ShopeeKeywords">
+<status status="NOT RUN" start="2024-12-06T15:15:58.649916" elapsed="0.000018"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-11-05T13:38:55.569062" level="INFO">Typing text 'Test@1111' into text field 'xpath=//input[@placeholder="รหัสผ่าน"]'.</msg>
-<arg>${PASSWORD_FIELD}</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-05T13:38:55.568798" elapsed="0.067124"/>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-12-06T15:15:58.650006" elapsed="0.000016"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-11-05T13:38:55.636399" level="INFO">Typing text 'Test@1111' into text field 'xpath=//input[@placeholder="ยืนยันรหัสผ่าน"]'.</msg>
-<arg>${CONFIRM_PASSWORD_FIELD}</arg>
-<arg>${confirm_password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-05T13:38:55.636126" elapsed="0.053255"/>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2024-12-06T15:15:58.792364" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-17.png"&gt;&lt;img src="selenium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-12-06T15:15:58.650153" elapsed="0.142292"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-11-05T13:38:55.689844" level="INFO">Clicking element 'xpath=//input[@type="checkbox"]'.</msg>
-<arg>${AGREE_TERMS_CHECKBOX}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-05T13:38:55.689600" elapsed="0.052813"/>
+<doc>Verify the search functionality on Shopee's home page for the keyword "baby toys."</doc>
+<status status="FAIL" start="2024-12-06T15:15:58.648122" elapsed="0.144412">No keyword with name 'This test ensures that users can search for products and that relevant results are displayed for valid input keywords.' found.</status>
+</test>
+<test id="s1-t3" name="TS003 Verify Search Results Are Displayed as a List" line="27">
+<kw name="This test checks that each product has essential details such as name and price, ensuring the search results are structured and informative.">
+<msg time="2024-12-06T15:15:58.793902" level="FAIL">No keyword with name 'This test checks that each product has essential details such as name and price, ensuring the search results are structured and informative.' found.</msg>
+<status status="FAIL" start="2024-12-06T15:15:58.793871" elapsed="0.000059">No keyword with name 'This test checks that each product has essential details such as name and price, ensuring the search results are structured and informative.' found.</status>
 </kw>
-<status status="PASS" start="2024-11-05T13:38:54.963966" elapsed="0.778605"/>
+<kw name="Select English Language" owner="ShopeeKeywords">
+<status status="NOT RUN" start="2024-12-06T15:15:58.794065" elapsed="0.000022"/>
 </kw>
-<kw name="user submits the registration form" owner="SignUpPageKeywords">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${SUBMIT_BUTTON}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-11-05T13:38:55.743339" elapsed="0.034045"/>
+<kw name="Search For Products" owner="ShopeeKeywords">
+<arg>baby toys</arg>
+<status status="NOT RUN" start="2024-12-06T15:15:58.794175" elapsed="0.000017"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-11-05T13:38:55.777847" level="INFO">Clicking element 'xpath=//button[text()="สมัครสมาชิก"]'.</msg>
-<arg>${SUBMIT_BUTTON}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-05T13:38:55.777610" elapsed="0.062031"/>
+<kw name="Verify Product Details" owner="ShopeeKeywords">
+<status status="NOT RUN" start="2024-12-06T15:15:58.794286" elapsed="0.000016"/>
 </kw>
-<status status="PASS" start="2024-11-05T13:38:55.742878" elapsed="0.096951"/>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-12-06T15:15:58.794376" elapsed="0.000016"/>
 </kw>
-<kw name="system should display OTP page with message &quot;ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์&quot;" owner="OTPPageKeywords">
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${OTP_MESSAGE}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-11-05T13:38:55.840549" elapsed="2.156279"/>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2024-12-06T15:15:58.907630" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-18.png"&gt;&lt;img src="selenium-screenshot-18.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-12-06T15:15:58.794528" elapsed="0.113184"/>
 </kw>
-<kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-11-05T13:38:58.006944" level="INFO">Current page contains element 'xpath=//h6[contains(text(), "ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์")]'.</msg>
-<arg>${OTP_MESSAGE}</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-11-05T13:38:57.997191" elapsed="0.009879"/>
-</kw>
-<status status="PASS" start="2024-11-05T13:38:55.840233" elapsed="2.166980"/>
-</kw>
-<doc>Test case for signing up on Future Skill platform</doc>
-<status status="PASS" start="2024-11-05T13:38:53.033243" elapsed="4.974227"/>
+<doc>Verify that the search results for "baby toys" are displayed in a user-friendly list format.</doc>
+<status status="FAIL" start="2024-12-06T15:15:58.792707" elapsed="0.115096">No keyword with name 'This test checks that each product has essential details such as name and price, ensuring the search results are structured and informative.' found.</status>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-11-05T13:38:58.008184" elapsed="0.139241"/>
+<status status="PASS" start="2024-12-06T15:15:58.908354" elapsed="0.095029"/>
 </kw>
-<status status="PASS" start="2024-11-05T13:38:50.762510" elapsed="7.385061"/>
+<status status="FAIL" start="2024-12-06T15:15:53.058409" elapsed="5.945046"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="SignUpTest">SignUpTest</stat>
+<stat pass="0" fail="3" skip="0" id="s1" name="TC Shopee">TC Shopee</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2024-12-06T15:15:53.171523" level="ERROR">Error in file '/Users/tampalita/Documents/Shopee/keywords/ShopeeKeywords.robot' on line 3: Processing variable file '/Users/tampalita/Documents/Shopee/resources/config/config.yaml' failed: Using YAML variable files requires PyYAML module to be installed. Typically you can install it by running `pip install pyyaml`.</msg>
+<msg time="2024-12-06T15:15:53.171690" level="ERROR">Error in file '/Users/tampalita/Documents/Shopee/keywords/ShopeeKeywords.robot' on line 4: Processing variable file '/Users/tampalita/Documents/Shopee/resources/testdata/testdata.yaml' failed: Using YAML variable files requires PyYAML module to be installed. Typically you can install it by running `pip install pyyaml`.</msg>
 </errors>
 </robot>
